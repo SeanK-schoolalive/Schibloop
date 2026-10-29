@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermes</title>
+    <meta
+      name="description"
+      content="Hermes is hosted from GitHub Pages as a static frontend."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Schibloop / Hermes</p>
+        <h1>Hermes on GitHub Pages</h1>
+        <p class="subtitle">
+          This repo hosts a static front-end for Hermes. GitHub Pages can serve the UI,
+          but it cannot run a Node/Express backend or act as a true server-side proxy.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Current configuration</h2>
+        <p>
+          Set the backend URL below to point to the service Hermes uses in production.
+          The browser fetches from that URL at runtime.
+        </p>
+        <div class="config-row">
+          <label for="backend-url">Backend URL</label>
+          <input id="backend-url" type="text" value="https://your-hermes-backend.example.com" />
+        </div>
+        <button id="load-hermes">Load Hermes</button>
+      </section>
+
+      <section class="card result-panel">
+        <h2>Response</h2>
+        <pre id="result">Waiting for a backend response...</pre>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
