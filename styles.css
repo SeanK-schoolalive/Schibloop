@@ -1,0 +1,119 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --panel-2: #1f2937;
+  --accent: #7dd3fc;
+  --accent-2: #38bdf8;
+  --text: #e5e7eb;
+  --muted: #cbd5e1;
+  --shadow: rgba(14, 116, 144, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #020817, #0f172a 30%, #111827 100%);
+  color: var(--text);
+}
+
+.page-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 720px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 18px 48px var(--shadow);
+  margin-top: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.config-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #082f49;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.result-panel pre {
+  margin: 0;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(2, 6, 23, 0.9);
+  color: var(--text);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  line-height: 1.6;
+}
